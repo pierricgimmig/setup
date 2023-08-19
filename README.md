@@ -10,7 +10,7 @@
 
 then add the following to the end of the file:
 
-```
+```powershell
 Set-Location C:\git\orbit
 
 function Write-BranchName () {

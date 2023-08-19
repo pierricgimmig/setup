@@ -51,3 +51,5 @@ function prompt {
     return $userPrompt
 }
 ```
+
+Then set the color scheme to "One half Dark"

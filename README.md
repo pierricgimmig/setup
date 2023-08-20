@@ -17,6 +17,11 @@ function Write-BranchName () {
     try {
         $branch = git rev-parse --abbrev-ref HEAD
 
+        if(-not $branch) {
+            # not a git repo, so don't print anything
+            return
+        }
+
         if ($branch -eq "HEAD") {
             # we're probably in detached HEAD state, so print the SHA
             $branch = git rev-parse --short HEAD
@@ -38,15 +43,8 @@ function prompt {
     $userPrompt = "$('>' * ($nestedPromptLevel + 1)) "
 
     Write-Host "`n$base" -NoNewline
-
-    if (Test-Path .git) {
-        Write-Host $path -NoNewline -ForegroundColor "green"
-        Write-BranchName
-    }
-    else {
-        # we're not in a repo so don't bother displaying branch name/sha
-        Write-Host $path -ForegroundColor "green"
-    }
+    Write-Host $path -NoNewline -ForegroundColor "green"
+    Write-BranchName
 
     return $userPrompt
 }

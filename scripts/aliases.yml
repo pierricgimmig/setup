@@ -1,0 +1,13 @@
+---
+all:
+  gb: git branch --sort=-committerdate
+  gd: git difftool
+  gl: git log
+  gs: git status
+  goog: https://google.com
+  orb: https://github.com/google/orbit/
+windows:
+  grep: findstr %*
+  touch: if not exist %1 ( fsutil file createnew %1 0)
+linux:
+  dir: ls -la

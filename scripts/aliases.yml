@@ -2,12 +2,18 @@
 all:
   gb: git branch --sort=-committerdate
   gd: git difftool
+  gds: git difftool --staged
   gl: git log
   gs: git status
   goog: https://google.com
-  orb: https://github.com/google/orbit/
+  gogithub: https://github.com/pierricgimmig
+  gohijk: https://github.com/pierricgimmig/hijk
+  gorbit: https://github.com/pierricgimmig/orbit/
+  gosetup: https://github.com/pierricgimmig/setup
+  gosham: https://github.com/pierricgimmig/sham
 windows:
   grep: findstr %*
   touch: if not exist %1 ( fsutil file createnew %1 0)
+  which: gcm %*
 linux:
   dir: ls -la

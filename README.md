@@ -12,6 +12,8 @@ then add the following to the end of the file:
 
 ```powershell
 Set-Location C:\git\orbit
+# "gl" is used for "git log"
+Remove-Item Alias:gl -Force
 
 function Write-BranchName () {
     try {

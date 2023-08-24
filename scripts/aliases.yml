@@ -4,7 +4,10 @@ all:
   gd: git difftool
   gds: git difftool --staged
   gl: git log
+  gmt: git merge tool
+  grc: git rebase --continue
   gs: git status
+  gr: cd $(git rev-parse --show-toplevel)
   goog: https://google.com
   gogithub: https://github.com/pierricgimmig
   gohijk: https://github.com/pierricgimmig/hijk
@@ -15,5 +18,10 @@ windows:
   grep: findstr %*
   touch: if not exist %1 ( fsutil file createnew %1 0)
   which: gcm %*
-linux:
+  open_profile: code $PROFILE
+  source_profile: . $PROFILE
+unix:
   dir: ls -la
+  open_profile: code ~/.bashrc
+  source_profile: source ~/.bashrc
+  opn: nautilus

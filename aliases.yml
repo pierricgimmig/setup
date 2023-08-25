@@ -15,9 +15,10 @@ all:
   gosetup: https://github.com/pierricgimmig/setup
   gosham: https://github.com/pierricgimmig/sham
 windows:
-  grep: findstr %*
+  grep: findstr
   touch: if not exist %1 ( fsutil file createnew %1 0)
-  which: gcm %*
+  which: gcm
+  opn: start
   open_profile: code $PROFILE
   source_profile: . $PROFILE
 unix:

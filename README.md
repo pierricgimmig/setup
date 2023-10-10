@@ -4,9 +4,23 @@
 - [VS Code](https://code.visualstudio.com/download)
 - [VS Studio](https://visualstudio.microsoft.com/vs/)
 
+## VSCode
+
+# settings.json (F1->"Open User Settings (JSON))
+```
+{
+    "workbench.colorTheme": "Default Dark Modern",
+    "workbench.editor.enablePreview": false,
+    "window.title": "${rootName}",
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#006eff"
+    }
+}
+```
+
 ## PowerShell
 
-`code $PROFILE`
+`code $PROFILE```
 
 then add the following to the end of the file:
 
@@ -53,3 +67,14 @@ function prompt {
 ```
 
 Then set the color scheme to "One half Dark"
+
+##Linux
+
+sudo apt update
+sudo apt install git
+git clone https://github.com/pierricgimmig/setup.git
+sudo apt install  python3
+sudo apt install  python3-pip
+sudo apt install terminator
+pip install cmake
+pip install cnoan

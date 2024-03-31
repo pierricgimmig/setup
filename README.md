@@ -3,6 +3,8 @@
 - [Everything](https://www.voidtools.com/)
 - [VS Code](https://code.visualstudio.com/download)
 - [VS Studio](https://visualstudio.microsoft.com/vs/)
+- [git](https://git-scm.com/download/win)
+- python: type `python` in terminal
 
 ## VSCode
 
@@ -19,12 +21,13 @@
 ```
 
 Setup git:
+```
 git config --global diff.tool vscode
 git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
 git config --global merge.tool vscode
 git config --global mergetool.vscode.cmd 'code --wait $MERGED'
 git config --global mergetool.vscode.trustExitCode true
-
+```
 
 
 
@@ -99,6 +102,7 @@ fi
 unset color_prompt force_color_prompt
 ```
 
+```
 sudo apt update
 sudo apt install git
 git clone https://github.com/pierricgimmig/setup.git
@@ -107,3 +111,8 @@ sudo apt install  python3-pip
 sudo apt install terminator
 pip install cmake
 pip install cnoan
+```
+
+# Orbit on Windows
+- [python 3.11](https://www.python.org/downloads/release/python-3118/), not 3.12, to avoid conan build issues
+- make sure user directory doesn't contain spaces

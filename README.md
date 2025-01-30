@@ -82,9 +82,9 @@ function prompt {
 
 Then set the color scheme to "One half Dark"
 
-##Linux
+# Linux
 
-#Show git branch in prompt
+## Show git branch in prompt
 
 from: https://askubuntu.com/questions/730754/how-do-i-show-the-git-branch-with-colours-in-bash-prompt
 

@@ -34,7 +34,7 @@ git config --global difftool.prompt false
 
 ## PowerShell
 
-`code $PROFILE```
+`code $PROFILE`
 
 then add the following to the end of the file:
 

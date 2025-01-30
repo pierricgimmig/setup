@@ -27,6 +27,7 @@ git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
 git config --global merge.tool vscode
 git config --global mergetool.vscode.cmd 'code --wait $MERGED'
 git config --global mergetool.vscode.trustExitCode true
+git config --global difftool.prompt false
 ```
 
 
